@@ -1,0 +1,40 @@
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.mdl-data-table {
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    /* 
+     * 100% of view height (100vh), minus:
+     *  -  Title bar: 56 pixels
+     *  -  Space at bottom: 128 pixels (increase to make more space)
+     */
+    height: calc(100vh - 184px);
+}
+
+#arrowArea {
+    margin: 1px;
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    bottom: 0px;
+    width: 75px;
+    height: 90px;
+    opacity: 0.6;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+.arrow {
+    width: 80%;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right:0;
+    margin: auto;
+}
